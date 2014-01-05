@@ -30,7 +30,7 @@ make clean && make mrproper (to clean the source)
 make hisi_k3v2oem1_defconfig ARCH=arm (to load the default config of your phone)
 make menuconfig (configue the Kernel [dont change settings you don't know, or your kernel will not work)
 make -j[number of your cpu-cores+1] ARCH=arm (This will start the process .. will take some time)
-make ARCH=arm zImage 
+ 
 
 Now you have your zImage 
 
