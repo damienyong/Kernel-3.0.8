@@ -6,25 +6,9 @@ Source:
 
 Ascend P6 Open Source(P6-U06,JellyBean,kernel-3.0.8)
 
-Features:
-
-First Build
-Only Added "Optimize for size" (so that the kernel should work without problems)
-More will come
 
 
-Credits:
-
-
-m!k3 (for the right download-link ^^)
-Huawei (for releasing this source)
-CNexus (for his wonderful Boot.img tools)
-worstenbrood (for his Huawei Update Extractor)
-raolleel (Building the kernels)
-jimbo77 for testing B118/CN
-
-
-Compiling TUT Linux 64BIT:
+Compiling TUTORIAL Linux 64BIT:
 
 cd (change to home dir)
 
@@ -32,7 +16,9 @@ mkdir android-kernel (make a folder for all the files)
 
 cd android-kernel
 
-git clone [URL WILL BE ADDED SOON)
+git clone https://github.com/damienyong/Kernel-3.0.8.git
+
+cd Kernel-3.0.8
 
 cd kernel
 

@@ -24,26 +24,7 @@ raolleel (Building the kernels)
 jimbo77 for testing B118/CN
 
 
-Warning:
-
-keep in mind : THIS IS A VERY EARLY BUILD
-
-tell me which bugs are there, or if this doesn't work _B118CN is tested, but should wok on every Rom with unlocked BL
-
-Only Works with Unlocked Bootloader, so you must have been on B118CN
-
-Should work with B118CN
-
-Should work with B125 if you were on B118Cn before
-
-Could work with B111 if your Bootloader is not relocked when you flash B111 from B118CN
-(only released because everyone said that the kernel is only for B111 [which I can't belive)
-
-
-
-I am not responsible for bricking/destroying your phone. Custom kernels comes with no warranty.
-
-Compile only on Linux :
+Compiling TUT Linux 64BIT:
 
 cd (change to home dir)
 
@@ -57,7 +38,7 @@ cd kernel
 
 export ARCH=arm (select architecture of your phone)
 export SUBARCH=arm (select architecture of your phone)
-export CROSS_COMPILE=../toolchain/arm-linux-androideabi-4.6/prebuilt/linux-x86_64/bin/arm-linux-androideabi- (tell the Kernel, where your compiler is)
+export CROSS_COMPILE=arm-linux-androideabi-4.6/prebuilt/linux-x86_64/bin/arm-linux-androideabi- (tell the Kernel, where your compiler is)
 
 make clean && make mrproper (to clean the source)
 make hisi_k3v2oem1_defconfig ARCH=arm (to load the default config of your phone)
