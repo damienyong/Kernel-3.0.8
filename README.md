@@ -25,11 +25,8 @@ cd kernel
 export ARCH=arm (select architecture of your phone)
 export SUBARCH=arm (select architecture of your phone)
 export CROSS_COMPILE=arm-linux-androideabi-4.6/prebuilt/linux-x86_64/bin/arm-linux-androideabi- (tell the Kernel, where your compiler is)
-
-make clean && make mrproper (to clean the source)
-make hisi_k3v2oem1_defconfig ARCH=arm (to load the default config of your phone)
-make menuconfig (configue the Kernel [dont change settings you don't know, or your kernel will not work)
 make -j[number of your cpu-cores+1] ARCH=arm (This will start the process .. will take some time)
+(if you don't get the zImage try: make -j[number of cpu-cores+1] zImage)
  
 
 Now you have your zImage 
